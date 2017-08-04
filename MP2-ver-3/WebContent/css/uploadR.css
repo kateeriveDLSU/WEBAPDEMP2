@@ -1,0 +1,357 @@
+body {
+	background: #f4f4f4;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-y: scroll;
+}
+
+@font-face {
+	font-family: colfax;
+	src: url('fonts/Colfax-Regular.otf');
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url('fonts/Roboto-Bold.ttf');
+}
+
+#search {
+	position: absolute;
+	right: 110px;
+	top: 15px;
+	border-radius: 30px;
+	padding: 5px 5px;
+}
+
+.iconse {
+	position: absolute;
+	right: 121px;
+	top: 23px;
+}
+
+.nav {
+	text-align: center;
+	padding: 9px 0px 50px 0px;
+	background-color: #333333;
+	margin-bottom: 0px;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+a {
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+}
+
+li.prof {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+
+.dropdown-content {
+	background-color: white;
+	border: 1px solid rgba(100, 100, 100, 0.4);
+	border-radius: 0px 0px 3px 3px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+	display: none;
+	right: 10px;
+	text-align: right;
+	min-width: 120px;
+	padding: 6px;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #66676b;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+	/* text-align: left; */
+	float: right;
+}
+
+.dropdown-content a:hover {
+	background-color: #333333;
+	border-bottom: 1px solid #333333;
+	border-top: 1px solid #333333;
+	color: white;
+}
+
+.prof:hover .dropdown-content {
+	display: block;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	line-height: 20px;
+	white-space: nowrap;
+	font-family: colfax;
+	font-size: 14px;
+	right: 10px;
+	color: aqua;
+}
+
+.dropdown-content:hover {
+	background-color: white;
+	border-bottom: 1px solid #333333;
+	border-top: 1px solid #333333;
+	color: #ffffff;
+	width: 97px;
+}
+
+/* submenu */
+#nav ul {
+	background-color: white;
+	border: 1px solid rgba(100, 100, 100, 0.4);
+	*border: 1px solid rgb(100, 100, 100);
+	border-radius: 0 0 3px 3px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+	display: none;
+	/*change hover menu*/
+	right: 10px;
+	text-align: left;
+	min-width: 150px;
+	margin-top: 2px;
+	padding: 6px 0;
+	position: absolute;
+	top: 120%;
+}
+
+#nav li:hover ul {
+	display: block;
+}
+
+/*edit the hover details*/
+#nav ul li a {
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	line-height: 20px;
+	padding: 0 22px;
+	white-space: nowrap;
+	font-family: colfax;
+	font-size: 14px;
+	left: 10px;
+}
+
+#nav ul li a:hover {
+	background-color: #333333;
+	border-bottom: 1px solid #333333;
+	border-top: 1px solid #333333;
+	color: white;
+	width: 97px;
+}
+/* END OF HEADER STUFF*/
+
+/* UPLOAD A PHOTO*/
+.uploadPhoto {
+	background-color: #f4f4f4;
+	border: 3px solid #333333;
+	height: 550px;
+	width: 800px;
+	position: absolute;
+	align-content: center;
+	top: 100px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+/*LEFT SIDE*/
+.pictureContainer {
+	background-color: #f4f4f4;
+	width: 360px;
+	position: relative;
+	float: left;
+	height: 550px;
+}
+
+/*This is the Upload a Picture*/
+.placeholderPicture {
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	right: 0px;
+	bottom: 0px;
+	background-image: url(../img/picture.jpg);
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+}
+
+#btnBrowse {
+	z-index: 10000;
+	position: absolute;
+	top: 400px;
+	left: 30px;
+	font-family: RobotoBold;
+}
+
+/* END OF LEFT SIDE*/
+
+/* Right Side*/
+.detailContainer {
+	background-color: #f4f4f4;
+	width: 440px;
+	position: relative;
+	float: right;
+}
+
+.innerContainer {
+	background-color: #f4f4f4;
+	position: relative;
+	width: 440px;
+	top: 30px;
+}
+
+.designDetail {
+	position: relative;
+	font-family: RobotoBold;
+	color: #555555;
+}
+
+.titleDes {
+	position: relative;
+	left: 0px;
+	top: 5px;
+	width: 420px;
+	margin: 5px;
+	padding: 5px 5px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+textarea {
+	top: 10px;
+	margin: 5px;
+	width: 420px;
+	position: relative;
+	resize: none;
+	padding: 5px 5px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+.slidePublic {
+	color: #555555;
+	font-family: RobotoBold;
+	font-size: 12px;
+	position: absolute;
+	top: 40px;
+	left: 376px;
+}
+
+.slidePrivate {
+	color: #555555;
+	font-family: RobotoBold;
+	font-size: 12px;
+	position: absolute;
+	top: 40px;
+	left: 373px;
+	display: none;
+}
+
+.I_AINT_REAL {
+	display: none;
+}
+
+.btnCancel {
+	font-family: RobotoBold;
+	background-color: #333333;
+	color: white;
+	border: 2px solid #333333;
+	border-radius: 7px;
+	font-size: 18px;
+	position: absolute;
+	top: 440px;
+	left: 230px;
+	padding: 5px;
+    text-decoration: none;
+}
+
+.btnPost {
+	font-family: RobotoBold;
+	background-color: #e73460;
+	color: white;
+	border: 2px solid #e73460;
+	border-radius: 7px;
+	font-size: 18px;
+	position: absolute;    
+	top: 440px;
+    left: 330px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* TOGGLE*/
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 53px;
+	height: 28px;
+	top: 10px;
+	left: 370px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	display: none;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #e73460;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #e73460;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #e73460;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+/* END OF TOGLLE*/
+/* END OF Right Side*/
+/* END OF UPLOAD A PHOTO*/
